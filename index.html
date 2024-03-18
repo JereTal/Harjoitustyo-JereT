@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Laskuri</title>
+</head>
+<body>
+    <header>
+        <p>Ohmin Laki</p>
+    </header>
+    <div id="ohmi">
+        <div id="laskuri">
+            <h3>Ohmin laki laskuri</h3>
+            <a id="las">Valitse laskettava arvo Laske napin yläpuolelta. Valitun arvon kenttä muuttuu vastaukseksi</a>
+            <label for="V">Jännite (V):</label>
+            <input type="number" id="V" value="0">
+
+            <label for="A">Virta (A):</label>
+            <input type="number" id="A" value="0">
+
+            <label for="O">Vastus (Ω):</label>
+            <input type="number" id="O" value="0">
+            <br>
+        </div>
+        <div id="napit">
+            <input type="radio" id="tapa-V" name="tapa" value="V">
+            <label for="tapa-V">Jännite (V)</label>
+
+            <input type="radio" id="tapa-A" name="tapa" value="A">
+            <label for="tapa-A">Virta (A)</label>
+
+            <input type="radio" id="tapa-O" name="tapa" value="O">
+            <label for="tapa-O">Vastus (Ω)</label>
+            
+        </div>
+    </div>
+    <button onclick="laske()">Laske</button>
+
+    <div class="sivu">
+        <h3 id="lista">Muita laskureita</h3>
+        <a href="https://cdn.discordapp.com/attachments/667839648227131423/1219331328143659209/1992rf2oafh61.png?ex=660ae9ca&is=65f874ca&hm=0be686cc4863c460fe015f63d9106ac0f383ac939f087bda552ac7febb1c0f6a&" target="_blank" >Kilometrit maileiksi laskuri</a> <br>
+        <a href="https://media.discordapp.net/attachments/667839648227131423/1144273227435225268/IMG_20230527_132630.jpg?ex=66057afc&is=65f305fc&hm=ea2086387fde7ffb644608310fd5ad71ebcd7e22b41a299ef96a33a541b1ffe5&=&format=webp&width=451&height=601" target="_blank">Kilometrit poronkusemaksi laskuri</a> <br>
+        <a href="https://cdn.discordapp.com/attachments/667839648227131423/1219331328143659209/1992rf2oafh61.png?ex=660ae9ca&is=65f874ca&hm=0be686cc4863c460fe015f63d9106ac0f383ac939f087bda552ac7febb1c0f6a&" target="_blank">Keskikulutuslaskuri</a> <br>
+        <a href="https://cdn.discordapp.com/attachments/667839648227131423/1219331328143659209/1992rf2oafh61.png?ex=660ae9ca&is=65f874ca&hm=0be686cc4863c460fe015f63d9106ac0f383ac939f087bda552ac7febb1c0f6a&" target="_blank">Keskiarvo laskuri</a> <br>
+        <a href="https://cdn.discordapp.com/attachments/667839648227131423/1219331328143659209/1992rf2oafh61.png?ex=660ae9ca&is=65f874ca&hm=0be686cc4863c460fe015f63d9106ac0f383ac939f087bda552ac7febb1c0f6a&" target="_blank">Tilavuuslaskuri</a> <br>
+        <a href="https://media.discordapp.net/attachments/667839648227131423/1219270221412569120/1710767048952.jpg?ex=660ab0e1&is=65f83be1&hm=a838330d71d9c78d250e7085cd641afdee96fc56960825f173f17711eb1c292c&=&format=webp&width=338&height=601" target="_blank">Katelaskuri</a> <br>
+        <a href="https://media.discordapp.net/attachments/667839648227131423/1219257404487634995/IMG-20240315-WA0007.jpg?ex=660aa4f1&is=65f82ff1&hm=0c8c6ca78714fe4a3bea3150530fd41ba10e142062de50bb276c27c823bfffa8&=&format=webp&width=801&height=601" target="_blank">ALV Laskuri</a> <br>
+        <a href="https://cdn.discordapp.com/attachments/667839648227131423/1219331328143659209/1992rf2oafh61.png?ex=660ae9ca&is=65f874ca&hm=0be686cc4863c460fe015f63d9106ac0f383ac939f087bda552ac7febb1c0f6a&" target="_blank">Lidl bonuslaskuri</a> <br>
+
+        <!-- Jätetty koristeeksi. Piti alkuperäisesti olla toimivia linkkejä mutta ajan ja motivaation puutten takia päätin jättää koristeeksi-->
+        
+        <p>(Tyhjiä linkkejä)</p>
+    </div>
+
+    <script src="./JS/functions.js"></script>
+</body>
+</html>
